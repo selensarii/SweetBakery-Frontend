@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sweet Bakery</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <link rel="icon" href="images/logo.png" type="image/png" />
+
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- cdn icon link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <!-- custom css file  -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- header section start here  -->
+    <header class="header">
+      <div class="logoContent">
+        <a href="#" class="logo"><img src="images/logo.png" alt="" /></a>
+        <h1 class="logoName">Sweet Bakery</h1>
+      </div>
+
+      <nav class="navbar">
+        <a href="#home">Ana Sayfa</a>
+        <a href="#product">Pastalar</a>
+        <a href="#blogs">Galeri</a>
+        <a href="#reservation">Sipariş</a>
+        <a href="#review">Müşterilerimiz</a>
+        <a href="#contact">İletişim</a>
+      </nav>
+      <div class="icon">
+        <i class="fas fa-search" id="search"></i>
+        <i class="fas fa-bars" id="menu-bar"></i>
+      </div>
+    </header>
+    <!-- header section end here  -->
+
+    <section class="home" id="home">
+      <video autoplay muted loop class="background-video">
+        <source src="pasta.mp4" type="video/mp4" />
+      </video>
+      <div class="homeContent">
+        <div class="degisen-yazi">
+          <h2>Bir Dilimle</h2>
+          <h1 class="baslik">
+            <span class="input"></span>
+          </h1>
+          <p>Lezzetin Herkesle Buluştuğu Adres</p>
+          <div class="home-btn">
+            <a href="#product">
+              <button>KEŞFET</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+      var typed = new Typed(".input", {
+        strings: [
+          "Dünyanız Tatlansın!",
+          "Tatlı Bir An Yaşayın!",
+          "Lezzeti Keşfedin!",
+        ],
+        typeSpeed: 100,
+        backSpeed: 70,
+        loop: true,
+        startDelay: 500,
+      });
+    </script>
+
+    <!-- product section start here  -->
+    <section class="product" id="product">
+      <div class="heading">
+        <h2>Ürünlerimiz</h2>
+      </div>
+      <div class="swiper product-row">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide box">
+            <div class="img">
+              <img src="images/ekin1.jpeg" alt="" />
+            </div>
+            <div class="product-content">
+              <h3>Angels Cake</h3>
+              <p>Fiyat: 150₺</p>
+              <div class="orderNow">
+                <a href="#reservation"><button>Sipariş Ver</button></a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide box">
+            <div class="img">
+              <img src="images/ekin7.jpeg" alt="" />
+            </div>
+            <div class="product-content">
+              <h3>Krem Karamel</h3>
+              <p>Fiyat: 120₺</p>
+              <div class="orderNow">
+                <a href="#reservation"><button>Sipariş Ver</button></a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide box">
+            <div class="img">
+              <img src="images/ekin3.jpeg" alt="" />
+            </div>
+            <div class="product-content">
+              <h3>Yıldız Kurabiye</h3>
+              <p>Fiyat: 50₺</p>
+              <div class="orderNow">
+                <a href="#reservation"><button>Sipariş Ver</button></a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide box">
+            <div class="img">
+              <img src="images/ekin4.jpeg" alt="" />
+            </div>
+            <div class="product-content">
+              <h3>Çikolatalı Donut</h3>
+              <p>Fiyat: 60₺</p>
+              <div class="orderNow">
+                <a href="#reservation"><button>Sipariş Ver</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="swiper product-row">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide box">
+            <div class="img">
+              <img src="images/ekin5.jpeg" alt="" />
+            </div>
+            <div class="product-content">
+              <h3>Bulut Pasta</h3>
+              <p>Fiyat: 140₺</p>
+              <div class="orderNow">
+                <a href="#reservation"><button>Sipariş Ver</button></a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide box">
+            <div class="img">
+              <img src="images/Vegan Chocolate Cake.jpeg" alt="" />
+            </div>
+            <div class="product-content">
+              <h3>Vegan Çikolatalı Pasta</h3>
+              <p>Fiyat: 130₺</p>
+              <div class="orderNow">
+                <a href="#reservation"><button>Sipariş Ver</button></a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide box">
+            <div class="img">
+              <img src="images/red-velvet-cake-4917734_1280.jpg" alt="" />
+            </div>
+            <div class="product-content">
+              <h3>Red Velvet Pasta</h3>
+              <p>Fiyat: 160₺</p>
+              <div class="orderNow">
+                <a href="#reservation"><button>Sipariş Ver</button></a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide box">
+            <div class="img">
+              <img src="images/caramel.jpg" alt="" />
+            </div>
+            <div class="product-content">
+              <h3>Çikolatalı</h3>
+              <p>Fiyat: 80₺</p>
+              <div class="orderNow">
+                <a href="#reservation"><button>Sipariş Ver</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <!-- product section end here -->
+
+    <!-- blogs section start here  -->
+    <section class="blogs" id="blogs">
+      <div class="heading">
+        <h2>Galeri</h2>
+      </div>
+      <div class="cake-grid">
+        <div class="cake-item">
+          <img
+            src="images/red-velvet-cake-4917734_1280.jpg"
+            alt="Çikolatalı Pasta"
+          />
+          <p>Red Velvet Pasta</p>
+        </div>
+        <div class="cake-item">
+          <img src="images/ekin5.jpeg" alt="Karamelli Pasta" />
+          <p>Bulut Pasta</p>
+        </div>
+        <div class="cake-item">
+          <img src="images/ekin1.jpeg" alt="Red Velvet Pasta" />
+          <p>Angels Cake</p>
+        </div>
+        <div class="cake-item">
+          <img src="images/ekin4.jpeg" alt="Meyveli Pasta" />
+          <p>Çikolatalı Donut</p>
+        </div>
+        <div class="cake-item">
+          <img src="images/ekin3.jpeg" alt="Vanilyalı Pasta" />
+          <p>Yıldız Kurabiye</p>
+        </div>
+        <div class="cake-item">
+          <img src="images/ekin7.jpeg" alt="Doğum Günü Pastası" />
+          <p>Krem Karamel</p>
+        </div>
+      </div>
+    </section>
+    <!-- blogs section ends here  -->
+
+    <!-- reservation section starts here  -->
+    <h3 class="section__subtitle" id="reservation">Hemen Sipariş Ver</h3>
+    <form
+      action="submit_appointment.php"
+      method="POST"
+      class="appointment-form"
+    >
+      <div>
+        <label for="name">Adınız:</label>
+        <input type="text" id="name" name="name" required />
+      </div>
+      <div>
+        <label for="surname">Soyadınız:</label>
+        <input type="text" id="surname" name="surname" required />
+      </div>
+      <div>
+        <label for="phone">Telefon Numaranız:</label>
+        <input type="tel" id="phone" name="phone" required />
+      </div>
+      <div>
+        <label for="service">Siparişiniz:</label>
+        <select id="service" name="service" required>
+          <option value="Çikolatalı Pasta">Çikolatalı Pasta</option>
+          <option value="Karamelli Pasta">Karamelli Pasta</option>
+          <option value="Meyveli Pasta">Meyveli Pasta</option>
+          <option value="Lotus Pasta">Lotus Pasta</option>
+        </select>
+      </div>
+      <div>
+        <label for="date">Tarih:</label>
+        <input type="date" id="date" name="date" required />
+      </div>
+      <div class="appointment-form-footer">
+        <button type="submit" class="btn-primary">Sipariş Ver</button>
+      </div>
+    </form>
+    <!-- reservation section ends here  -->
+
+    <!-- newsletter section start here  -->
+    <section class="newsletter">
+      <form action="">
+        <h3>Son güncellemelerden haberdar olmak için abone olun.</h3>
+        <input
+          type="email"
+          name=""
+          placeholder="enter your email"
+          id=""
+          class="box"
+        />
+        <input type="button" value="abone ol" class="box2" />
+      </form>
+    </section>
+    <!-- newsletter section ends here  -->
+
+    <!-- review section start here  -->
+    <section class="review" id="review">
+      <div class="heading">
+        <h2>Müşteri Yorumları</h2>
+      </div>
+
+      <div class="swiper review-row">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide box">
+            <div class="client-review">
+              <p>
+                Bu ürün tam beklediğim gibi! Kesinlikle tekrar alırım. Harika!
+              </p>
+            </div>
+            <div class="client-info">
+              <div class="img">
+                <img src="images/client1.jpg" alt="" />
+              </div>
+              <div class="clientDetailed">
+                <h3>Ahmet Y.</h3>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide box">
+            <div class="client-review">
+              <p>
+                Hızlı kargo, kaliteli ürün. Fiyat/performans harika. Tavsiye
+                ederim!
+              </p>
+            </div>
+            <div class="client-info">
+              <div class="img">
+                <img src="images/client1.jpg" alt="" />
+              </div>
+              <div class="clientDetailed">
+                <h3>Ceren Ceyda Y.</h3>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide box">
+            <div class="client-review">
+              <p>
+                Pasta gerçekten kaliteli, çok memnun kaldım. Kesinlikle tavsiye
+                ederim.
+              </p>
+            </div>
+            <div class="client-info">
+              <div class="img">
+                <img src="images/client1.jpg" alt="" />
+              </div>
+              <div class="clientDetailed">
+                <h3>Selen Sarı</h3>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide box">
+            <div class="client-review">
+              <p>
+                Ürün sorunsuz bir şekilde elime ulaştı. Çok teşekkür ederim!
+              </p>
+            </div>
+            <div class="client-info">
+              <div class="img">
+                <img src="images/client1.jpg" alt="" />
+              </div>
+              <div class="clientDetailed">
+                <h3>Mehmet T.</h3>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide box">
+            <div class="client-review">
+              <p>
+                Siparişim zamanında geldi, çok memnun kaldım. Kesinlikle
+                öneririm!
+              </p>
+            </div>
+            <div class="client-info">
+              <div class="img">
+                <img src="images/client1.jpg" alt="" />
+              </div>
+              <div class="clientDetailed">
+                <h3>Elif K.</h3>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide box">
+            <div class="client-review">
+              <p>
+                Muhteşem bir hizmet sunuyorlar, müşteri desteği de çok iyiydi.
+                Teşekkürler!
+              </p>
+            </div>
+            <div class="client-info">
+              <div class="img">
+                <img src="images/client1.jpg" alt="" />
+              </div>
+              <div class="clientDetailed">
+                <h3>Canan D.</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <!-- review section ends here  -->
+
+    <!-- footer section start here  -->
+
+    <footer class="footer" id="contact">
+      <div class="box-container">
+        <div class="mainBox">
+          <div class="content">
+            <a href="#"><img src="images/logo.png" alt="" /></a>
+            <h1 class="logoName">Sweet Cake</h1>
+          </div>
+
+          <p>Necip Fazıl Mahallesi Soylu Sokak No:3 Kat:5 Daire:16</p>
+          <p>Sultanbeyli/İstanbul</p>
+        </div>
+        <div class="box">
+          <h3>İletişim</h3>
+          <a href="#"> <i class="fas fa-phone"></i>(541) 9238850</a>
+          <a href="#"> <i class="fas fa-envelope"></i>selensari25@gmail.com</a>
+        </div>
+      </div>
+      <div class="share">
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-pinterest"></a>
+      </div>
+    </footer>
+
+    <!-- swiper js link  -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- custom js file  -->
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -57,43 +57,18 @@ var swiper = new Swiper(".review-row", {
     },
   },
 });
-//dark mode
-const toggleButton = document.getElementById("dark-mode-toggle");
-const body = document.body;
 
-toggleButton.addEventListener("click", () => {
-  body.classList.toggle("dark-mode");
-
-  // Kullanıcı tercihini kaydet
-  if (body.classList.contains("dark-mode")) {
-    localStorage.setItem("theme", "dark");
-  } else {
-    localStorage.setItem("theme", "light");
-  }
-});
-
-// Sayfa yüklendiğinde kullanıcı tercihini uygula
-window.addEventListener("DOMContentLoaded", () => {
-  const theme = localStorage.getItem("theme");
-  if (theme === "dark") {
-    body.classList.add("dark-mode");
-  }
-});
-
-// Form gönderimi sırasında çalışacak olan fonksiyon
 document
   .querySelector(".appointment-form")
   .addEventListener("submit", async (event) => {
-    event.preventDefault(); // Sayfanın yeniden yüklenmesini engeller
+    event.preventDefault();
 
-    // Formdaki verileri al
     const name = document.getElementById("name").value;
     const surname = document.getElementById("surname").value;
     const phone = document.getElementById("phone").value;
     const service = document.getElementById("service").value;
     const date = document.getElementById("date").value;
 
-    // API'ye POST isteği gönder
     try {
       const response = await fetch("https://localhost:7167/api/Orders", {
         method: "POST",
@@ -108,8 +83,6 @@ document
           orderDate: date,
         }),
       });
-
-      // Yanıtı kontrol et
       if (response.ok) {
         alert("Siparişiniz başarıyla kaydedildi!");
       } else {
